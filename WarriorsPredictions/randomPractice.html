@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery.js"></script>
+</head>
+<body>
+<title>GSW Hoops</title>
+<div>
+	<h1> Warriors Basketball </h1>
+	<h2> we gon be championship </h2>
+	<ol>
+		<li class="rocks">Huston Rockets
+			<a href="testHTML.html" class="allButtons">click to view outcome</a>
+		</li>
+		<li class="clips">LA Clippers
+			<a href="clipsRedirect.html" class="allButtons">click to view outcome</a></li>
+		<li class="Blazers">Portland Trailblazers
+			<a href="portlandPred.html" class="allButtons">click to view prediction</a></li>
+		<li class="spurs">San Antonio Spurs
+			<a href="spursPred.html" class="allButtons">click to view prediction</a>
+			</li>
+		<li class="cavs">Clevland Caveliers
+			<a href="cavsPred.html" class="allButtons">click to view prediction</a></li>
+	</ol>
+
+<img src="images/gswBayLogo.png" alt="gsw" style= "width:100px;height:100px;">
+
+<!-- <a href="GSWchamps.html"> -->
+	<button id="testing">Just a test</button>
+    <button class="practicebox">Final Prediction</button>
+<!-- </a> -->
+<script>
+
+$(document).ready(function() {
+
+	$('button').on('click', function() {
+    var wins = $('<p>2016 champs GSW</p>')
+    $('.practicebox').append(wins)
+    $(this).before();
+    // console.log('you clicked pred button')
+ });
+
+	$('button').on('click', function() {
+    var test = $('<p>testing</p>')
+    $('#testing').append(test)
+    // $(this).remove();
+    // console.log('test')
+    // console.log('you clicked pred button')
+ });
+});
+
+
+</script>
+    </div>
+</body>
+</html>
+
+
+
