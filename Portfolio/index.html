@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="Styles.css">
+        <script src="jquery.js"></script>
+        <title>Elias Tsadik</title>
+    </head>
+    <body>
+        <h1>Elias Tsadik's Portfolio</h1>
+        <div class="myinfo">
+        <div>
+        <img class="homepic" src="images/me.jpg" alt="mypic" style="width:200px;height:200px;">
+            <a class="resume" href="basicResume.html">Resume</a>
+        </div>
+        <div class="biography">Elias Tsadik was born in 1985 with one sibling paving the way before him.  Although his parents were foreigners, Berkeley was all he knew for his first few years of existence.  His mother was an artist from Switzerland who migrated to California during the hippie times of the 70's.  His father, from Ethiopia, was the one of the highest achieving students in his high school, which allowed him to obtain a scholarship to study at the University of California, Berkeley.
+
+        Elias attended Berkeley High School in 1999, where he enrolled in several advanced placement courses.  Although he enjoyed most of his classes, science and mathematics are the subjects in which he excelled.  After high school, he attended the University of California, Santa Cruz where jumped between majors in economics and chemistry, before finally settling with biology.
+
+        After college Elias worked in a chemistry lab.  He analyzed soil samples from lots before building took place. Using gas chromatography to test the levels of fuels, he worked closely with the EPA.
+
+        Elias then became an employee of the Oakland Children's Hospital where he worked in an immunology laboratory.  The main focus was on infant antibodies and how they mutate and become stronger after vaccination.  He published one paper during his time there.
+
+        A free thinker and diligently hard working is one way to describe Elias.  In his spare time, Elias enjoyes playing soccer, supporting the local sports teams, and a little culinary experimentation.
+        </div>
+
+    </div>
+
+    <div class="bloglinks">
+    <div class="code">
+        <a href="coding.html">
+            <img class="picture" src="images/codeLines.jpg" alt="binary" style="width:200px;height:150px;">
+            <div class="text">Coding</div>
+        </a>
+    </div>
+    <div class="biology">
+        <a href="biology.html">
+            <img class="picture" src="images/AbsOnAgSurface.jpg" alt="antibody" style="width:200px;height:150px;">
+            <div class="text">Biology</div>
+        </a>
+    </div>
+    <div class="finance">
+        <a href="finance.html">
+            <img class="picture" src="images/simplecandle.jpg" alt="chart" style="width:200px;height:150px;">
+            <div class="text">Finance</div>
+            </a>
+    </div>
+    <div class="sport">
+        <a href="sport.html">
+                    <img class="picture" src="images/bayarea.jpg" alt="woodpic" style="width:200px;height:150px;">
+                <div class="text">Sports</div>
+                </a>
+    </div>
+    </div>
+   <!--  <div class="me">
+        <div class="headshot">
+        <img class="picture" src="images/Baysports.jpg" alt="woodpic" style="width:200px;height:150px;">
+        </div> -->
+    <div class="blogcount">
+        <button class="bttn">Days until next blog</button>
+    </div>
+        <script>
+            $(document).ready(function() {
+                $('button').on('click', function(e) {
+                    e.preventDefault();
+                    var dateBox = $('<p>Days until next blog</p>')
+                    var date = new Date;
+                    var day = date.getDay();
+                    var daysLeft =  7 - day;
+                    $('.blogcount').append(daysLeft);
+                    console.log(daysLeft)
+                    $('.bttn').remove();
+
+                    // $('.body').append(eliasbio);
+
+        console.log('clicked!', document.lastModified);
+        // $(this).before();
+        // console.log('you clicked pred button')
+
+     });
+
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('button').on('click', function(e) {
+                e.preventDefault();
+            })
+            })
+        </script>
+
+    </body>
+</html>
+
+
+

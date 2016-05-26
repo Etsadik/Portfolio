@@ -1,0 +1,104 @@
+
+body {
+    background-image: url("images/woodgrain.jpg");
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font: impact;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+.text {
+    color:white;
+    font-style: bold;
+    margin-left: 20px;
+    display: flex;
+    font-size: 20px;
+}
+
+.codeText {
+    color: orange;
+}
+
+.picture {
+    border: 6px black solid;
+    padding: 2px;
+    margin-left:20px;
+    /*display: inline;*/
+    }
+.myinfo {
+    border: 6px black solid;
+    align: center;
+    display:flex;
+}
+
+.blogcount {
+    color: red;
+    display: inline;
+    background-color: green;
+    margin-left: 20px;
+    font-size: 20px;
+    font: bold;
+
+}
+.bloglinks {
+    display: flex;
+    padding:5px;
+}
+.codingBlogs {
+    /*color: white;*/
+    font-size: 30px;
+    margin-left: 40px;
+    /*background-color: lightblue;*/
+}
+
+.scopes {
+    /*color: pink;*/
+    /*background-color: darkblue;*/
+    /*display: inline;*/
+}
+ .biography {
+    color: white;
+ }
+
+ .myinfo {
+    background-color: darkred;
+    /*display: block;*/
+    padding: 3px;
+ }
+
+ .resume {
+    font-size: 20px
+ }
+.minititle {
+    font-size: 20px;
+    color: darkred;
+    margin-left: 20px
+    background-color: red;
+    font-weight: bold;
+}
+.list {
+    color: white;
+}
+
+.text1 {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.bold {
+    font-size: 20px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.text2 {
+    text-indent: 20px
+}

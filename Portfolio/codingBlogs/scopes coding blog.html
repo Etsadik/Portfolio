@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../Styles.css">
+    <meta charset="UTF-8">
+    <title>Scopes</title>
+</head>
+<body>
+<h1>Understanding Scopes in JavaScript</h1>
+<div class="text">Scope is a concept that can be confusing and frustrating when learning for the first time but is enormously useful once mastered. It allows for flexibility by isolating variables based on their lexical environment. For example, writing a program in which all variables are located in the same scope would require that each variable be unique to avoid overwriting and redefining variables. Thus, by breaking up code into smaller pieces lexical scoping allows code to be read section by section, and not have to worry about all the code at once. Scope only arises with the use of functions, and in its most simple form can be thought of as the visibility of variables.
+</div>
+<div class="minititle">Variables: Local Vs. Global</div>
+<div></div>
+
+</body>
+<div class="text">A variable declared outside of any function is called a global variable and all other functions have access to this global variable. A variable that is declared inside of a function using the “var” key word is only defined within that function and called a local variable. Local variables are undefined outside of their scope, while global variables are defined everywhere.</div>
+<div class="minititle">Nested Scopes</div>
+<div class="text">Beyond local and global variables there can be degrees of locality when one or more functions are nested within each other. Only functions can create scope in Javascript. In the example below two the two ‘i’ variables do not conflict with one another due to scoping but they can both access the combined variable in the outer scope even though it is not contained in the global scope. To paraphrase, functions have access to variables in functions that contain the child functions.</div>
+<div>ADD THE moneycombiner SNIPPET HERE</div>
+<div class="minititle">Context vs. Scope</div>
+<div class="text">Context and scope are very closely related, their definitions are often confused and mixed up. Context deals with the object on which a method belongs. When an object has a property that is a function, the context of that function is the object. In the example below ‘foodType’ is a function that is a property on the curry object, so ‘this’ refers to the the entire ‘curry’ object.</div>
+<div>ADD THE curry SNIPPET HERE</div>
+<div class="text">Context can be manipulated and changed by using the apply(), bind(), and call() methods. See below:
+</div>
+<div>ADD THE fondue SNIPPET HERE</div>
+<div class="text">We have just changed the context of the curry object to with the fondue object.</div>
+<div class="minititle">Closures</div>
+<div class="text">When you access a variable outside of its scope it is called a closure. Stated differently, a closure is a function that is out of scope but still has access to the outer scopes’ variables. In the example, the nameGetter function is contained within the ‘tester’ function. The ‘tester’ function generates the nameGetter function. The closure is made on when the var ‘nombre’ is declared.
+</div>
+<div>ADD THE closures SNIPPET HERE</div>
+</html>
